@@ -7,5 +7,9 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
         font-family: 'Kanit', sans-serif;
         max-width: 100vw;
+        
+        ::-webkit-scrollbar {
+  display: none;
+}
     }
 `;

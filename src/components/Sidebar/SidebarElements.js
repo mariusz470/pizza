@@ -4,14 +4,14 @@ import { FaTimes, FaPlus, FaMinus } from "react-icons/fa";
 
 export const SidebarContainer = styled.aside`
   position: fixed;
-
+  z-index: ${({ isOpen }) => (isOpen ? "999" : "-1")};
   width: 350px;
   height: 100%;
   background: #ffc500;
   display: grid;
   align-items: center;
   top: 0;
-  /* transition: 0.3s ease-in-out; */
+  transition: 0.3s ease-in-out;
   right: 0;
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
   overflow: scroll;

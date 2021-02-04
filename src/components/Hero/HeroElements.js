@@ -45,8 +45,7 @@ export const HeroH1 = styled.h1`
 `;
 
 export const HeroP = styled.p`
-  font-size: 10px;
-  /* font-size: clamp(2rem, 2.5vw, 3rem); */
+  font-size: clamp(2rem, 2.5vw, 3rem);
   margin-bottom: 2rem;
 `;
 

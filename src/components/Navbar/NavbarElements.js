@@ -27,17 +27,27 @@ export const NavLink = styled(Link)`
 
 export const NavIcon = styled.div`
   display: block;
+  width: auto;
+  height: auto;
   position: fixed;
-  top: 0;
-  right: 0;
+  top: 25px;
+  right: 50px;
   cursor: pointer;
+  padding: 10px;
   color: #fff;
+  border: ${({ ordering }) => (ordering ? "2px solid #e31837" : "")};
+  border-radius: 5px;
+  background: ${({ ordering }) => (ordering ? "#e31837" : "transparent")};
+  transition: 0.2s ease-in-out;
 
   p {
     font-weight: bold;
+    font-size: ${({ ordering }) => (ordering ? "1.2em" : "1em")};
   }
 `;
 
 export const Bars = styled(FaPizzaSlice)`
   font-size: 2rem;
+  width: auto;
+  height: auto;
 `;
